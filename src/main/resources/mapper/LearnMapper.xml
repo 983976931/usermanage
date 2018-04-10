@@ -49,4 +49,7 @@
             #{idItem}
         </foreach>
     </delete>
+    <select id="getAllLearnResource" resultMap="baseResultMap" >
+        select * from learn_resource;
+    </select>
 </mapper>

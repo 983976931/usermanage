@@ -17,4 +17,5 @@ public interface LearnMapper {
     int deleteByIds(String[] ids);
     LearnResouce queryLearnResouceById(Long id);
     public List<LearnResouce> queryLearnResouceList(Map<String, Object> params);
+    public List<LearnResouce> getAllLearnResource();
 }

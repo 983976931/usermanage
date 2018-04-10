@@ -5,6 +5,9 @@ import com.lyy.usermanage.mapper.LearnMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+import java.util.Map;
+
 /**
  * Created by Lee on 2018/4/10.
  */
@@ -30,5 +33,15 @@ public class LearnServiceImpl implements LearnService{
     @Override
     public LearnResouce queryLearnResouceById(Long id) {
         return this.learnMapper.queryLearnResouceById(id);
+    }
+
+    @Override
+    public List<LearnResouce> queryLearnResouceList(Map<String,Object> params) {
+//        PageHelper.startPage(Integer.parseInt(params.get("page").toString()), Integer.parseInt(params.get("rows").toString()));
+        return this.learnMapper.queryLearnResouceList(params);
+    }
+
+    public List<LearnResouce> getAllLearnResource(){
+        return learnMapper.getAllLearnResource();
     }
 }

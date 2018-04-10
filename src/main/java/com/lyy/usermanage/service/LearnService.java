@@ -13,5 +13,6 @@ public interface LearnService {
     int update(LearnResouce learnResouce);
     int deleteByIds(String[] ids);
     LearnResouce queryLearnResouceById(Long learnResouce);
-//    List<LearnResouce> queryLearnResouceList(Map<String, Object> params);
+    List<LearnResouce> queryLearnResouceList(Map<String, Object> params);
+    public List<LearnResouce> getAllLearnResource();
 }

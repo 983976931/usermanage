@@ -14,7 +14,7 @@ public class UserController {
     @Autowired
     LearnService learnService;
 
-    @RequestMapping(value = "/hello")
+    @RequestMapping(value = "/addLearnCouse")
     public String getUser(){
         LearnResouce learnResouce = new LearnResouce();
         learnResouce.setAuthor("lyy");
