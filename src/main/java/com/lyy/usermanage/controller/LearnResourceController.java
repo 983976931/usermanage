@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.List;
 
 /**
- * Created by Lee on 2018/4/10.
+ * Created by Lee on 2018/4/10. 测试链接mybaits
  */
 @Controller
 public class LearnResourceController {
